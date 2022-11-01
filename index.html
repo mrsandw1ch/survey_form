@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" >
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform </p>     
+    </header>
+    <main>
+      <form action="https://" method="GET" id="survey-form">
+
+        <label class="form-group" id="name-label">Name<input class="form-control" id="name" type="text" placeholder="Enter your name" required />
+        </label>
+
+        <label class="form-group" id="email-label">Email<input class="form-control" id="email" type="email" placeholder="Enter your email" required />
+        </label>
+
+        <label class="form-group" id="number-label">Age (optional)<input class="form-control" id="number" type="number" min="7" max="150" placeholder="Your age" />
+        </label>
+
+        <label class="form-group" id="current-role-label">Which option best describes your current role?
+        <select id="" class="form-control" id="dropdown" name="role" required>
+            <option disabled="" selected="" value="">Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Full-time job">Full-time job</option>
+            <option value="Full-time Learner">Full-time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+        </select></label>
+
+        <p id="recommendation">Would you recommend us to a friend?</p>
+        <label><input type="radio" name="recommendation" value="Definitely">Definitely</label>
+        <label><input type="radio" name="recommendation" value="Definitely">Maybe</label>
+        <label><input type="radio" name="recommendation" value="Not sure">Not sure</label>
+
+        <p id="recommendation">What would you like to see improved?</p>
+        <label id="1-label"><input value="1" type="checkbox" />1</label>
+        <label id="2-label"><input value="2" type="checkbox" />2</label>
+        <label id="3-label"><input value="3" type="checkbox" />3</label>
+        <label id="4-label"><input value="4" type="checkbox" />4</label>
+        <label id="5-label"><input value="5" type="checkbox" />5</label>
+        <label id="6-label"><input value="6" type="checkbox" />6</label>
+        <label id="7-label"><input value="7" type="checkbox" />7</label>
+
+        <label class="form-group" id="comments-label">Any comments or suggestions?
+        <textarea class="form-control" placeholder="Enter your comment here..."></textarea>
+        </label>
+        
+        <input id="submit" type="submit" value="Submit"/>
+    </form>
+    </main>
+    
+  </body>
+</html>
